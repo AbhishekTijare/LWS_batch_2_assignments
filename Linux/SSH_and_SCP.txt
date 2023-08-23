@@ -1,0 +1,14 @@
+# To connect to remote server from local machine use 
+ ssh {user}@{Host_ip} 
+ and then password is required 
+ 
+ 
+# Having key-pair file i.e pem file then
+ssh -i {adress_of_pem_file} {user}@{host_ip}
+
+# To copy file from local to remote and from remote to other remote server 
+scp -i {address_of_pem_file} {file_address} {user}@{host_ip}:{where_to_copy}
+
+# To copy file from remote server to local server , execute the below command in the local server 
+scp -i {address_of_pem_file} {user}@{host_ip}:{which_file_to_copy} {where_to_copy}
+ 
