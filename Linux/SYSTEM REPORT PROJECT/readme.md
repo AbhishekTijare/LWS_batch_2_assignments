@@ -3,4 +3,15 @@
 ```
 tar -cvf system_report.tar {directory}
 ```
-# now copy to ec2 instance
+# 2.now copy to ec2 instance
+```
+scp -i {address_of_pem_file} {file_address} {user}@{host_ip}:{where_to_copy}
+```
+# 3.now login to ec2 instance 
+```
+ssh -i {address_of_pem_file} {user}@{host_ip}
+```
+# 4.extract the compressed file
+```
+tar xf system_report.tar
+```
