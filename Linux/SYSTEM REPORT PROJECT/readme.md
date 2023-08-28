@@ -15,3 +15,13 @@ ssh -i {address_of_pem_file} {user}@{host_ip}
 ```
 tar xf system_report.tar
 ```
+# 5. give proper permission to project 
+# 6. set a cron job
+```
+sudo crontab -e
+```
+```
+# Run the script at 9:00 AM and 6:00 PM every day
+0 9,18 * * * {location}/main.sh
+
+```
